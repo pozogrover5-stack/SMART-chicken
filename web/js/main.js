@@ -68,3 +68,32 @@ document.querySelectorAll("[data-wa]").forEach(function (el) {
   // Recalcular posiciones cuando todo (fuentes/imágenes) terminó de cargar.
   window.addEventListener("load", function () { ScrollTrigger.refresh(); });
 })();
+
+// ===== Pestañas de formas de pago =====
+(function () {
+  const tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+  if (!tabs.length) return;
+
+  function activate(tab) {
+    tabs.forEach(function (t) {
+      const on = t === tab;
+      t.classList.toggle("is-active", on);
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute("aria-controls"));
+      if (panel) { panel.hidden = !on; panel.classList.toggle("is-active", on); }
+    });
+  }
+
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener("click", function () { activate(tab); });
+    tab.addEventListener("keydown", function (e) {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      e.preventDefault();
+      const dir = e.key === "ArrowRight" ? 1 : -1;
+      const next = tabs[(i + dir + tabs.length) % tabs.length];
+      next.focus();
+      activate(next);
+    });
+  });
+})();
