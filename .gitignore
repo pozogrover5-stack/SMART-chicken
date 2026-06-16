@@ -1,0 +1,38 @@
+# Dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# Builds / salida
+dist/
+build/
+.next/
+out/
+
+# Sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.lnk
+
+# Editores / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos fuente pesados de diseño (no van al repo web)
+*.psd
+*.ai
+
+# Logs y temporales
+*.log
+npm-debug.log*
+.cache/
+.tmp/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
