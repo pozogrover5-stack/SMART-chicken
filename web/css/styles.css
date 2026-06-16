@@ -1,13 +1,14 @@
-/* ===== Smart Chicken — paleta naranja + blanco, texto marrón oscuro ===== */
+/* ===== Smart Chicken — PALETA OFICIAL (manual de identidad) ===== */
 :root{
-  --naranja:        #F4811E;
-  --naranja-osc:    #E06A0A;
-  --naranja-claro:  #FFF3E6;
-  --marron:         #3B2417;   /* texto principal, como el logo */
-  --marron-suave:   #6B4A30;
+  --naranja:        #F29F06;   /* naranja/amarillo principal */
+  --naranja-osc:    #B84D10;   /* naranja quemado, acento */
+  --naranja-claro:  #FFF1D6;   /* tinte claro del naranja */
+  --marron:         #250101;   /* marrón oscuro, texto y logo */
+  --marron-suave:   #5C3A2E;   /* texto secundario */
+  --beige:          #C3A277;   /* beige/dorado, detalles */
   --blanco:         #FFFFFF;
-  --crema:          #FFF8F0;
-  --sombra:         0 10px 30px rgba(59,36,23,.15);
+  --crema:          #FFF8EF;
+  --sombra:         0 10px 30px rgba(37,1,1,.14);
   --radio:          18px;
 }
 
@@ -19,6 +20,10 @@ body{
   background:var(--crema);
   line-height:1.5;
 }
+/* Títulos: Fredoka (alt. web de Berlin Sans FB Demi Bold) */
+h1,h2,h3{ font-family:'Fredoka','Poppins',sans-serif; }
+/* Acento manuscrito: Caveat (alt. web de Dark Poetry) */
+.font-accent{ font-family:'Caveat',cursive; }
 img{ display:block; width:100%; height:100%; object-fit:cover; }
 section{ padding:48px 20px; }
 
@@ -45,10 +50,8 @@ section{ padding:48px 20px; }
   padding:12px 18px; background:var(--naranja);
   box-shadow:0 4px 14px rgba(59,36,23,.18);
 }
-.brand{ display:flex; align-items:center; gap:.4em; text-decoration:none; color:var(--marron); }
-.brand__mark{ font-size:1.6rem; }
-.brand__name{ font-weight:800; font-size:1.15rem; letter-spacing:.5px; }
-.brand__name span{ display:block; line-height:.95; }
+.brand{ display:flex; align-items:center; text-decoration:none; }
+.brand__logo{ height:42px; width:auto; }
 .btn--header{ background:var(--marron); color:var(--blanco); font-size:.85rem; padding:.6em 1em; }
 .btn--header:hover{ background:#23150c; }
 
@@ -57,7 +60,11 @@ section{ padding:48px 20px; }
   font-size:1.7rem; font-weight:800; text-align:center; color:var(--marron);
   margin-bottom:8px;
 }
-.section-sub{ text-align:center; color:var(--marron-suave); max-width:560px; margin:0 auto 28px; }
+.section-title::after{
+  content:""; display:block; width:54px; height:4px; border-radius:2px;
+  background:var(--beige); margin:10px auto 0;
+}
+.section-sub{ text-align:center; color:var(--marron-suave); max-width:560px; margin:14px auto 28px; }
 
 /* ===== Hero ===== */
 .hero{ padding:0 0 40px; }
@@ -67,7 +74,8 @@ section{ padding:48px 20px; }
   display:inline-block; background:var(--marron); color:var(--blanco);
   font-weight:600; font-size:.8rem; padding:.4em 1em; border-radius:999px; margin-bottom:14px;
 }
-.hero__title{ font-size:2.6rem; font-weight:800; line-height:1.05; }
+.hero__title{ font-size:2.9rem; font-weight:700; line-height:1; }
+.hero__accent{ display:block; font-size:2rem; color:var(--naranja-osc); line-height:1; margin-top:2px; }
 .hero__sub{ color:var(--marron-suave); margin:12px auto 22px; max-width:440px; }
 .hero__cta{ display:flex; flex-direction:column; gap:12px; align-items:center; }
 .hero__cta .btn{ width:100%; max-width:340px; }
@@ -146,7 +154,8 @@ section{ padding:48px 20px; }
   background:var(--marron); color:var(--crema); text-align:center;
   padding:40px 20px 90px; display:flex; flex-direction:column; gap:8px; align-items:center;
 }
-.footer__brand{ font-size:1.5rem; font-weight:800; color:var(--naranja); letter-spacing:1px; }
+.footer__brand{ display:inline-block; }
+.footer__logo{ height:70px; width:auto; border-radius:14px; }
 .footer p{ font-size:.92rem; opacity:.9; }
 .footer .btn{ margin-top:10px; }
 .footer__copy{ margin-top:14px; font-size:.8rem; opacity:.6; }

@@ -11,11 +11,42 @@ nuevo e independiente.
 - **Frase / tagline:** "Pollos a la brasa".
 - **Tono:** moderno, fresco, juvenil.
 
-## Identidad visual
-- **Paleta:** NARANJA + blanco. **Nunca rojo ni amarillo.**
-- **Texto:** marrón oscuro sobre naranja, tal como en el logo.
-- **Logo:** wordmark "SMART CHICKEN" con ícono de pollo y bajada
-  "POLLOS A LA BRASA" (marrón oscuro sobre naranja).
+## Identidad visual (OFICIAL — manual de identidad)
+### Paleta (códigos exactos)
+- **Naranja/amarillo principal:** `#F29F06`
+- **Marrón oscuro** (texto y logo): `#250101`
+- **Naranja quemado** (acento): `#B84D10`
+- **Beige/dorado** (detalles): `#C3A277`
+- Más blanco/crema de apoyo. **Nunca rojo puro ni amarillo chillón.**
+
+### Tipografía (oficial + alternativa web usada)
+- **Títulos / "SMART CHICKEN":** oficial *Berlin Sans FB Demi Bold*. No está
+  en Google Fonts → en la web se usa **Fredoka** (sans geométrica gruesa y
+  redondeada, la más parecida).
+- **"POLLOS A LA BRASA" / acento decorativo:** oficial *Dark Poetry*
+  (manuscrita) → en la web se usa **Caveat** (manuscrita) como alternativa.
+
+### Logo
+- Wordmark "SMART CHICKEN" con ícono de pollo y bajada "POLLOS A LA BRASA"
+  (marrón `#250101` sobre fondo naranja `#F29F06`). Isotipo (solo el pollo)
+  existe en versión beige `#C3A277`.
+- Archivos fuente: `LOGO SMART.png`, `LOGO 1SMART.png`, `Mesa de trabajo
+  10.png` (logo completo, idénticos) y `Mesa de OPCION 217.png` (isotipo
+  beige). En el repo, procesados en `web/assets/brand/`:
+  `logo.png` (fondo naranja), `logo-trans.png` (fondo transparente),
+  `chicken.png` / `chicken-trans.png` (isotipo).
+
+## Estrategia de marca (del manual)
+- **Visión:** ser la pollería más reconocida y preferida de la región, con
+  un toque especial familiar; la primera opción para compartir momentos.
+- **Misión:** pollos a la brasa y complementos con insumos frescos y toque
+  familiar, precios accesibles y servicio conveniente (delivery o llevar).
+- **Valores:** respeto, accesibilidad, compromiso con mejorar, tradición
+  familiar.
+- **Tono:** moderno. **Objetivos del rebranding:** incrementar ventas y
+  captar nuevos clientes.
+- **Referencias del rubro que le gustan:** Don Tito, Villa Chicken,
+  Don Cirilo, Tori Pollería. (Recordar: SOLO delivery.)
 
 ## Datos del negocio (CORRECTOS — usar siempre estos)
 - **Dirección:** Av. Los Lirios 211, Urb. Entel, San Juan de Miraflores (SJM).
@@ -61,3 +92,14 @@ se irán agregando, sin romper el layout cuando falten o se sumen.
 > Nota: las fotos DALL·E son temporales. El cliente reemplazará con fotos
 > reales (ver REGLA 2). Los `.psd` están excluidos del repo vía `.gitignore`
 > (binarios pesados de diseño), pero siguen en disco.
+
+### Material oficial de marca (fuera del repo)
+El manual de identidad, logos y `.ai`/`.docx` están en
+`Desktop/Pagina WEB/SMART_CHICKEN/` y en un zip en `Downloads/`. De ahí se
+copiaron e integraron el logo (`web/assets/brand/`) y la info de marca.
+- `INFORMACIÒN SMART CHICKEN_.docx` — brief oficial (visión/misión/FODA).
+- `IDENTIDAD SMART 2025.ai` — fuente vectorial de la identidad.
+
+> ⚠️ **Pendiente:** aún NO hay fotos reales de producto/personal. Las únicas
+> fotos disponibles siguen siendo las de IA (placeholders). Cuando el cliente
+> entregue fotos reales, reemplazar en hero, destacados y galería (REGLA 2).
