@@ -201,52 +201,6 @@ html.anim .hero__content > *{ opacity:0; }
 }
 .galeria__item--soon span{ text-align:center; font-size:.9rem; }
 
-/* ===== Pagos — pestañas (tabs) ===== */
-.tabs{ max-width:600px; margin:0 auto; }
-.tabs__nav{
-  display:flex; gap:8px; background:var(--blanco); padding:7px;
-  border-radius:999px; box-shadow:var(--sombra); border:1px solid rgba(195,162,119,.3);
-}
-.tab{
-  flex:1; display:inline-flex; align-items:center; justify-content:center; gap:.4em;
-  font-family:'Fredoka',inherit; font-weight:600; font-size:.95rem; color:var(--marron-suave);
-  background:transparent; border:0; border-radius:999px; padding:.8em .6em; cursor:pointer;
-  min-height:46px; -webkit-tap-highlight-color:transparent;
-  transition:color .2s ease, background .25s ease, transform .15s ease;
-}
-.tab__ico{ font-size:1.05rem; }
-.tab:hover{ color:var(--marron); }
-.tab.is-active{
-  background:var(--naranja); color:var(--marron);
-  box-shadow:0 6px 16px rgba(242,159,6,.4);
-}
-.tab:active{ transform:scale(.97); }
-
-.tabs__panels{
-  position:relative; margin-top:22px; background:var(--blanco);
-  border-radius:var(--radio); box-shadow:var(--sombra-lg);
-  border:1px solid rgba(195,162,119,.25); padding:34px 26px; min-height:230px;
-  display:flex; align-items:center; justify-content:center;
-}
-.tab-panel{
-  display:none; flex-direction:column; align-items:center; gap:14px; text-align:center;
-  width:100%;
-}
-.tab-panel.is-active{ display:flex; }
-.tab-panel.is-active{ animation:panelIn .35s ease both; }
-@keyframes panelIn{ from{ opacity:0; transform:translateY(10px) } to{ opacity:1; transform:translateY(0) } }
-.tab-panel__icon{
-  width:64px; height:64px; border-radius:18px; background:var(--naranja-claro);
-  display:flex; align-items:center; justify-content:center; font-size:2rem;
-}
-.tab-panel p{ color:var(--marron-suave); font-size:1.05rem; max-width:360px; }
-.tab-panel strong{ color:var(--marron); }
-.qr-placeholder{
-  width:185px; height:185px; border:2px dashed var(--naranja);
-  border-radius:16px; display:flex; flex-direction:column; align-items:center; justify-content:center;
-  color:var(--naranja-osc); font-weight:600; text-align:center; background:var(--naranja-claro);
-}
-
 /* ===== Ubicación ===== */
 .ubicacion__grid{ display:grid; gap:26px; max-width:1100px; margin:0 auto; }
 .ubicacion__list{ list-style:none; display:flex; flex-direction:column; gap:16px; }
