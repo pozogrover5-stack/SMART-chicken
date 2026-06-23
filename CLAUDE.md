@@ -59,6 +59,49 @@ nuevo e independiente.
 > y teléfono "933 568 171"). NO usar esos datos: los correctos son los de
 > arriba (211 / 949 240 863).
 
+## Carta / Precios oficiales (fuente de verdad — actualizada)
+> Lista oficial enviada por el cliente. Estos son los precios vigentes;
+> reemplazan a los del PNG antiguo de la carta.
+
+**Pollos a la brasa**
+- 1/4 Pollo — S/ 15
+- 1/4 Pollo + Gaseosa — S/ 16
+- 1/2 Pollo — S/ 29
+- 1/2 Pollo + 2 Gaseosas de 335 ml — S/ 32
+- 1 Pollo + papas — S/ 52
+- 1 Pollo + papas + Gaseosa 1.5 L — S/ 57
+- 1 Pollo + 1/4 Pollo + papas + Gaseosa 1.5 L — S/ 66
+- Pollo solo — S/ 42
+
+**Broaster**
+- Broaster encuentro — S/ 14
+- Broaster pecho — S/ 18
+
+**Mostritos**
+- Mostrito — S/ 14
+- Mostro — S/ 18
+
+**Papas y otros**
+- Salchipapa — S/ 13
+- Porción de papa grande — S/ 19
+- 1/2 Porción de papa — S/ 12
+
+**Hamburguesas**
+- Hamburguesa Clásica — S/ 13
+- Hamburguesa Royal — S/ 16
+- Hamburguesa de Chorizo — S/ 14
+- Hamburguesa de Filete de Pollo — S/ 15
+
+**Bebidas**
+- Gaseosa 355 ml — S/ 1.50
+- Gaseosa 1.5 L — S/ 5
+- Agua personal — S/ 1.50
+
+> En la web, estos precios viven en la sección **#menu** (lista por
+> categorías). El PNG descargable (`carta-smart-chicken.png`) sigue con
+> precios ANTIGUOS → pendiente reemplazarlo cuando el cliente envíe la
+> imagen nueva de la carta.
+
 ## Público objetivo
 - Familias del barrio.
 - Trabajadores de la zona.

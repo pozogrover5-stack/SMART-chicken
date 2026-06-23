@@ -192,6 +192,31 @@ html.anim .hero__content > *{ opacity:0; }
 .card__body p{ color:var(--marron-suave); font-size:.93rem; flex:1; }
 .card__body .btn{ margin-top:4px; }
 
+/* ===== Menú completo ===== */
+.menu__grid{ display:flex; flex-wrap:wrap; gap:20px; max-width:1040px; margin:0 auto 32px; }
+.menu-cat{
+  flex:1 1 100%; min-width:0;
+  background:var(--blanco); border-radius:var(--radio); padding:24px 22px;
+  box-shadow:var(--sombra); border:1px solid rgba(195,162,119,.25);
+}
+.menu-cat__title{
+  font-size:1.2rem; color:var(--marron); margin-bottom:14px; padding-bottom:12px;
+  border-bottom:2px solid var(--naranja-claro);
+}
+.menu-list{ list-style:none; }
+.menu-list li{
+  display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  padding:9px 0; border-bottom:1px dashed rgba(195,162,119,.45);
+}
+.menu-list li:last-child{ border-bottom:0; }
+.menu-item{ color:var(--marron); font-weight:500; font-size:.96rem; min-width:0; overflow-wrap:anywhere; }
+.menu-dots{ display:none; }
+.menu-price{
+  flex:none; font-family:'Fredoka',sans-serif; font-weight:600; color:var(--naranja-osc);
+  white-space:nowrap; font-size:1rem;
+}
+.menu__cta{ display:flex; margin:0 auto; max-width:340px; }
+
 /* ===== Galería ===== */
 .galeria{ background:var(--naranja-claro); }
 .galeria__grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; max-width:960px; margin:0 auto; }
@@ -266,6 +291,7 @@ html.anim .hero__content > *{ opacity:0; }
   .pasos__grid{ grid-template-columns:repeat(3,1fr); }
   .cards{ grid-template-columns:repeat(3,1fr); }
   .galeria__grid{ grid-template-columns:repeat(4,1fr); }
+  .menu-cat{ flex:1 1 calc(33.333% - 14px); }
   .ubicacion__grid{ grid-template-columns:1.05fr 1.35fr; align-items:stretch; }
   .ubicacion__map{ height:100%; min-height:480px; }
   .footer__inner{ grid-template-columns:1.4fr 1fr 1fr; gap:40px; }
