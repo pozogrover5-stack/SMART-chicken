@@ -98,9 +98,11 @@ nuevo e independiente.
 - Agua personal — S/ 1.50
 
 > En la web, estos precios viven en la sección **#menu** (lista por
-> categorías). El PNG descargable (`carta-smart-chicken.png`) sigue con
-> precios ANTIGUOS → pendiente reemplazarlo cuando el cliente envíe la
-> imagen nueva de la carta.
+> categorías) y en el PNG descargable **actualizado**
+> `web/assets/carta/carta-smart-chicken.png`. Esa imagen se genera desde
+> `web/carta.html` (poster 1080×1620 con la paleta de marca, logo y fotos
+> reales) → para actualizarla en el futuro, edita `carta.html` y vuelve a
+> exportarla a PNG (screenshot headless 2x → redimensionar a ~1300px ancho).
 
 ## Público objetivo
 - Familias del barrio.

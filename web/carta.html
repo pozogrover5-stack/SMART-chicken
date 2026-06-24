@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Lilita+One&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --naranja:#F29F06; --marron:#250101; --quemado:#B84D10; --beige:#C3A277; --crema:#FFF8EF;
+  }
+  body{ font-family:'Poppins',sans-serif; }
+  .carta{
+    width:1080px; height:1620px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(130% 80% at 50% -10%, #FBB12B 0%, var(--naranja) 45%, #E89205 100%);
+    color:var(--marron); padding:40px 46px 38px;
+  }
+  /* marca de agua del pollo */
+  .wm{ position:absolute; width:560px; opacity:.10; right:-120px; bottom:-90px; transform:rotate(-8deg); }
+  .wm2{ position:absolute; width:300px; opacity:.10; left:-90px; top:300px; transform:rotate(8deg) scaleX(-1); }
+
+  /* ===== Header ===== */
+  .head{ display:flex; flex-direction:column; align-items:center; position:relative; z-index:2; }
+  .head img{ width:430px; height:auto; display:block; }
+  .head .sep{ width:240px; height:4px; background:var(--marron); opacity:.85; border-radius:3px; margin-top:6px; }
+
+  /* ===== Hero foto ===== */
+  .hero{ position:relative; z-index:2; margin:22px 0 8px; display:flex; gap:18px; }
+  .hero .pic{ border-radius:22px; overflow:hidden; border:5px solid var(--crema); box-shadow:0 14px 30px rgba(37,1,1,.28); }
+  .hero .big{ flex:2; height:300px; }
+  .hero .small{ flex:1; height:300px; }
+  .hero img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .ribbon{
+    position:absolute; z-index:3; top:-6px; left:50%; transform:translateX(-50%);
+    background:var(--marron); color:var(--crema); font-family:'Lilita One',cursive;
+    font-size:30px; letter-spacing:1px; padding:10px 34px; border-radius:0 0 16px 16px;
+  }
+
+  /* ===== Menú ===== */
+  .menu{
+    position:relative; z-index:2; margin-top:18px;
+    background:var(--crema); border-radius:26px; padding:26px 30px 24px;
+    box-shadow:0 16px 36px rgba(37,1,1,.22); display:grid; grid-template-columns:1fr 1fr; gap:10px 40px;
+  }
+  .cat{ break-inside:avoid; }
+  .cat h3{
+    font-family:'Fredoka',sans-serif; font-weight:700; font-size:25px; color:var(--quemado);
+    text-transform:uppercase; letter-spacing:.5px; margin:10px 0 6px; display:flex; align-items:center; gap:8px;
+  }
+  .cat:first-child h3{ margin-top:0; }
+  .row{ display:flex; align-items:baseline; gap:8px; padding:5px 0; }
+  .row .name{ font-size:19px; font-weight:500; color:var(--marron); white-space:nowrap; }
+  .row .name small{ display:block; font-size:13px; color:#7a5a44; font-weight:400; white-space:normal; }
+  .row .dots{ flex:1; border-bottom:2px dotted rgba(120,80,55,.5); transform:translateY(-5px); min-width:10px; }
+  .row .price{ font-family:'Fredoka',sans-serif; font-weight:700; font-size:20px; color:var(--marron); white-space:nowrap; }
+
+  /* ===== Pie ===== */
+  .foot{
+    position:relative; z-index:2; margin-top:16px; background:var(--marron); color:var(--crema);
+    border-radius:22px; padding:18px 26px; display:flex; align-items:center; justify-content:space-between; gap:18px;
+  }
+  .foot .phone{ display:flex; align-items:center; gap:14px; }
+  .foot .phone .wa{
+    width:58px; height:58px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; flex:none;
+  }
+  .foot .phone .num{ font-family:'Lilita One',cursive; font-size:38px; line-height:1; color:#fff; }
+  .foot .phone .num small{ display:block; font-family:'Poppins'; font-size:13px; font-weight:600; color:var(--beige); letter-spacing:.5px; }
+  .foot .addr{ text-align:right; font-size:16px; line-height:1.45; }
+  .foot .addr b{ color:var(--naranja); }
+  .foot .addr .tag{ display:inline-block; margin-top:6px; background:var(--naranja); color:var(--marron); font-weight:700; font-size:13px; padding:4px 12px; border-radius:999px; letter-spacing:.3px; }
+</style>
+</head>
+<body>
+  <div class="carta">
+    <img class="wm" src="assets/brand/chicken-trans.png" alt="" />
+    <img class="wm2" src="assets/brand/chicken-trans.png" alt="" />
+
+    <div class="head">
+      <img src="assets/brand/logo-trans.png" alt="Smart Chicken — Pollos a la brasa" />
+    </div>
+
+    <div class="hero">
+      <div class="ribbon">NUESTRA CARTA</div>
+      <div class="pic big"><img src="assets/fotos/pollo-1.webp" alt="Pollo a la brasa" /></div>
+      <div class="pic small"><img src="assets/fotos/pollo-5.webp" alt="Pollo con papas" /></div>
+    </div>
+
+    <div class="menu">
+      <!-- Columna izquierda -->
+      <div class="col">
+        <div class="cat">
+          <h3>🍗 Pollos a la brasa</h3>
+          <div class="row"><span class="name">1/4 Pollo</span><span class="dots"></span><span class="price">S/ 15</span></div>
+          <div class="row"><span class="name">1/4 Pollo + Gaseosa</span><span class="dots"></span><span class="price">S/ 16</span></div>
+          <div class="row"><span class="name">1/2 Pollo</span><span class="dots"></span><span class="price">S/ 29</span></div>
+          <div class="row"><span class="name">1/2 Pollo + 2 Gaseosas 335 ml</span><span class="dots"></span><span class="price">S/ 32</span></div>
+          <div class="row"><span class="name">1 Pollo + papas</span><span class="dots"></span><span class="price">S/ 52</span></div>
+          <div class="row"><span class="name">1 Pollo + papas + Gaseosa 1.5 L</span><span class="dots"></span><span class="price">S/ 57</span></div>
+          <div class="row"><span class="name">1 Pollo + 1/4 + papas + Gaseosa 1.5 L</span><span class="dots"></span><span class="price">S/ 66</span></div>
+          <div class="row"><span class="name">Pollo solo</span><span class="dots"></span><span class="price">S/ 42</span></div>
+        </div>
+        <div class="cat">
+          <h3>🍗 Broaster</h3>
+          <div class="row"><span class="name">Broaster encuentro</span><span class="dots"></span><span class="price">S/ 14</span></div>
+          <div class="row"><span class="name">Broaster pecho</span><span class="dots"></span><span class="price">S/ 18</span></div>
+        </div>
+        <div class="cat">
+          <h3>🔥 Mostritos</h3>
+          <div class="row"><span class="name">Mostrito <small>pollo + papas + salchicha</small></span><span class="dots"></span><span class="price">S/ 14</span></div>
+          <div class="row"><span class="name">Mostro <small>versión XL del mostrito</small></span><span class="dots"></span><span class="price">S/ 18</span></div>
+        </div>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col">
+        <div class="cat">
+          <h3>🍟 Papas y otros</h3>
+          <div class="row"><span class="name">Salchipapa</span><span class="dots"></span><span class="price">S/ 13</span></div>
+          <div class="row"><span class="name">Porción de papa grande</span><span class="dots"></span><span class="price">S/ 19</span></div>
+          <div class="row"><span class="name">1/2 Porción de papa</span><span class="dots"></span><span class="price">S/ 12</span></div>
+        </div>
+        <div class="cat">
+          <h3>🍔 Hamburguesas</h3>
+          <div class="row"><span class="name">Clásica</span><span class="dots"></span><span class="price">S/ 13</span></div>
+          <div class="row"><span class="name">Royal</span><span class="dots"></span><span class="price">S/ 16</span></div>
+          <div class="row"><span class="name">De Chorizo</span><span class="dots"></span><span class="price">S/ 14</span></div>
+          <div class="row"><span class="name">De Filete de Pollo</span><span class="dots"></span><span class="price">S/ 15</span></div>
+        </div>
+        <div class="cat">
+          <h3>🥤 Bebidas</h3>
+          <div class="row"><span class="name">Gaseosa 355 ml</span><span class="dots"></span><span class="price">S/ 1.50</span></div>
+          <div class="row"><span class="name">Gaseosa 1.5 L</span><span class="dots"></span><span class="price">S/ 5</span></div>
+          <div class="row"><span class="name">Agua personal</span><span class="dots"></span><span class="price">S/ 1.50</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="phone">
+        <span class="wa">
+          <svg viewBox="0 0 32 32" width="34" height="34" fill="#fff"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.2 1.6 7 0 12.5-5.5 12.5-12.5S23 3 16 3Zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.2 10.2 0 0 1-1.6-5.4C5.4 9.6 10.1 5 16 5s10.6 4.6 10.6 10.5S21.9 25.8 16 25.8Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-1.9-.9-3.1-1.7-4.4-3.8-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-1.2 1.2-1.1 2.8-.1 4.4 1.9 2.9 3.3 4.1 6.4 5.4 2.2.9 2.6.7 3.1.7.6 0 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3Z"/></svg>
+        </span>
+        <span class="num">949 240 863<small>WHATSAPP · +51</small></span>
+      </div>
+      <div class="addr">
+        <b>Av. Los Lirios 211</b>, Urb. Entel, SJM<br />A una cuadra del Mall del Sur
+        <br /><span class="tag">SOLO DELIVERY O RECOJO EN TIENDA</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
