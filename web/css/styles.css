@@ -194,6 +194,12 @@ html.anim .hero__content > *{ opacity:0; }
 .card__body p{ color:var(--marron-suave); font-size:.93rem; flex:1; }
 .card__body .btn{ margin-top:4px; }
 
+/* Nota discreta de imágenes referenciales */
+.ref-note{
+  text-align:center; margin-top:18px; font-size:.78rem; font-style:italic;
+  color:var(--marron-suave); opacity:.7;
+}
+
 /* ===== Galería ===== */
 .galeria{ background:var(--naranja-claro); }
 .galeria__grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; max-width:960px; margin:0 auto; }
